@@ -18,7 +18,7 @@ list.style.listStyle = 'none';
 list.style.display = 'flex';
 list.style.flexWrap = 'nowrap';
 list.style.justifyContent = 'space-between';
-list.style.gap= '30px';
+
 
 const imgList = images.map(image =>
   `<li class='item-img'><img class='img' src=${image.url} alt=${image.alt}></img></li>`
@@ -30,17 +30,12 @@ console.log(imgList);
 
 const elLi = document.querySelectorAll('.item-img');
 
-elLi.forEach(element => {
-  element.style.width = '300px';
-  element.style.height = '150px';
-})
-
 const elImg = document.querySelectorAll('.img');
 elImg.forEach(element => {
-  element.style.width = '100%';
-   element.style.height = '100%';
-element.style.opacity = '0.5';
-element.style.objectFit = 'cover';
+  element.style.width = '300px';
+  element.style.height = '150px';
+  element.style.opacity = '0.5';
+  element.style.objectFit = 'cover';
 })
 
 
