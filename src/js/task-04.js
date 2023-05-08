@@ -7,7 +7,7 @@ const counterValueEl = document.querySelector('#value');
 
 let counterValue = 0;
 
-const handleClick = () => {
+const handleClickDecrement = () => {
     counterValue--;
     counterValueEl.textContent = counterValue;
 };
@@ -17,6 +17,6 @@ const handleClickIncrement = () => {
     counterValueEl.textContent = counterValue;
 };
 
-btnDecrement.addEventListener('click',handleClick);
+btnDecrement.addEventListener('click',handleClickDecrement);
 
 btnIncrement.addEventListener('click', handleClickIncrement);
