@@ -3,14 +3,14 @@ const rest = {
     span: document.querySelector('#name-output'),
     
 }
-console.log(rest);
+
 
 rest.input.addEventListener('input',onInputChange)
 
 function onInputChange(event) {
-    rest.span.textContent = event.currentTarget.value;
-    if (rest.input.textContent = '') {
-        rest.span.textContent === rest.input.textContent;
+    event.preventDefault();
+    rest.span.textContent = rest.input.value
+        ? rest.input.value : rest.span.textContent;
+
 }
-}
-console.log(rest);
+
