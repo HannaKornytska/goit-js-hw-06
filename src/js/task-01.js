@@ -2,9 +2,6 @@
 
 // #1
 
-const listId = document.querySelector('#categories');
-// console.log(listId);
-
 const listAllItem = document.querySelectorAll('.item');
 // console.log(listAllItem);
 
